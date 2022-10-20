@@ -17,6 +17,7 @@ router.get("/categories/:id", ensureAuth, categoriesController.show)
 
 router.get("/courses/featured", ensureAuth, coursesControler.featured)
 router.get("/courses/newest", coursesControler.newest)
+router.get("/courses/popular", ensureAuth, coursesControler.popular)
 router.get("/courses/search", ensureAuth, coursesControler.search)
 router.get("/courses/:id", ensureAuth, coursesControler.show)
 
